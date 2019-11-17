@@ -210,7 +210,7 @@
 		DD4EFCA2236E579100718D50 = {
 			isa = PBXGroup;
 			children = (
-				DD4EFCAD236E579100718D50 /* Modular iOS Architecture [SwiftyIDxStockbit] */,
+				DD4EFCAD236E579100718D50 /* Modular iOS Architecture */,
 				DD4EFCAC236E579100718D50 /* Products */,
 				C05059395CC2C5DDC7881CAF /* Pods */,
 				4A04E07EE5B3A0C95CA75CD1 /* Frameworks */,
@@ -225,7 +225,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DD4EFCAD236E579100718D50 /* Modular iOS Architecture [SwiftyIDxStockbit] */ = {
+		DD4EFCAD236E579100718D50 /* Modular iOS Architecture */ = {
 			isa = PBXGroup;
 			children = (
 				DD4EFCAE236E579100718D50 /* AppDelegate.swift */,
@@ -239,7 +239,7 @@
 				DD4EFCB9236E579300718D50 /* LaunchScreen.storyboard */,
 				DD4EFCBC236E579300718D50 /* Info.plist */,
 			);
-			path = "Modular iOS Architecture [SwiftyIDxStockbit]";
+			path = "Modular iOS Architecture";
 			sourceTree = "<group>";
 		};
 		DD4EFCC2236E57DC00718D50 /* Login */ = {
@@ -356,9 +356,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DD4EFCAA236E579100718D50 /* Modular iOS Architecture [SwiftyIDxStockbit] */ = {
+		DD4EFCAA236E579100718D50 /* Modular iOS Architecture */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD4EFCBF236E579300718D50 /* Build configuration list for PBXNativeTarget "Modular iOS Architecture [SwiftyIDxStockbit]" */;
+			buildConfigurationList = DD4EFCBF236E579300718D50 /* Build configuration list for PBXNativeTarget "Modular iOS Architecture" */;
 			buildPhases = (
 				83DD3A97113B3BFAF4DD9B0F /* [CP] Check Pods Manifest.lock */,
 				DD4EFCA7236E579100718D50 /* Sources */,
@@ -370,7 +370,7 @@
 			);
 			dependencies = (
 			);
-			name = "Modular iOS Architecture [SwiftyIDxStockbit]";
+			name = "Modular iOS Architecture";
 			productName = "Modular iOS Architecture [SwiftyIDxStockbit]";
 			productReference = DD4EFCAB236E579100718D50 /* SwiftyID.app */;
 			productType = "com.apple.product-type.application";
@@ -390,7 +390,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DD4EFCA6236E579100718D50 /* Build configuration list for PBXProject "Modular iOS Architecture [SwiftyIDxStockbit]" */;
+			buildConfigurationList = DD4EFCA6236E579100718D50 /* Build configuration list for PBXProject "Modular iOS Architecture" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -403,7 +403,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DD4EFCAA236E579100718D50 /* Modular iOS Architecture [SwiftyIDxStockbit] */,
+				DD4EFCAA236E579100718D50 /* Modular iOS Architecture */,
 			);
 		};
 /* End PBXProject section */
@@ -635,13 +635,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ASHUNREKRL;
-				INFOPLIST_FILE = "Modular iOS Architecture [SwiftyIDxStockbit]/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Modular iOS Architecture/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.stockbit.Modular-iOS-Architecture--SwiftyIDxStockbit-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stockbit.Modular-iOS-Architecture";
 				PRODUCT_NAME = SwiftyID;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -655,13 +655,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ASHUNREKRL;
-				INFOPLIST_FILE = "Modular iOS Architecture [SwiftyIDxStockbit]/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Modular iOS Architecture/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.stockbit.Modular-iOS-Architecture--SwiftyIDxStockbit-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stockbit.Modular-iOS-Architecture";
 				PRODUCT_NAME = SwiftyID;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -671,7 +671,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DD4EFCA6236E579100718D50 /* Build configuration list for PBXProject "Modular iOS Architecture [SwiftyIDxStockbit]" */ = {
+		DD4EFCA6236E579100718D50 /* Build configuration list for PBXProject "Modular iOS Architecture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD4EFCBD236E579300718D50 /* Debug */,
@@ -680,7 +680,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD4EFCBF236E579300718D50 /* Build configuration list for PBXNativeTarget "Modular iOS Architecture [SwiftyIDxStockbit]" */ = {
+		DD4EFCBF236E579300718D50 /* Build configuration list for PBXNativeTarget "Modular iOS Architecture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD4EFCC0236E579300718D50 /* Debug */,

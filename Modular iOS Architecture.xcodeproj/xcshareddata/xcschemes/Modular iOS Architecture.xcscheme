@@ -46,10 +46,19 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DD4EFCAA236E579100718D50"
             BuildableName = "SwiftyID.app"
+            BlueprintName = "Modular iOS Architecture"
+            ReferencedContainer = "container:Modular iOS Architecture.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DD4EFCAA236E579100718D50"
+            BuildableName = "SwiftyID.app"
             BlueprintName = "Modular iOS Architecture [SwiftyIDxStockbit]"
             ReferencedContainer = "container:Modular iOS Architecture [SwiftyIDxStockbit].xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
