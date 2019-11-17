@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/trevinwisaksana/Documents/Modular iOS Architecture [SwiftyIDxStockbit]/Modular iOS Architecture.xcodeproj">
+      location = "group:Modular iOS Architecture.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
