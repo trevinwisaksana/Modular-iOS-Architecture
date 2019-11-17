@@ -1,1 +1,1 @@
-# Modular-iOS-Architecture-SwiftyIDxStockbit
+# Modular iOS Architecture Coding Exercise SwiftyIDxStockbit
