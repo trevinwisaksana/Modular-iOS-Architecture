@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Watchlist View Controller-->
+        <scene sceneID="9AC-U5-1K3">
+            <objects>
+                <viewController storyboardIdentifier="WatchlistViewController" id="D6o-k0-mYl" customClass="WatchlistViewController" customModule="SwiftyID" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KuB-1l-9Ye">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyl-Sg-aLh" customClass="WatchlistView" customModule="SwiftyID" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gyl-Sg-aLh" firstAttribute="leading" secondItem="i1C-jd-zN2" secondAttribute="leading" id="B08-R1-Nia"/>
+                            <constraint firstItem="gyl-Sg-aLh" firstAttribute="top" secondItem="i1C-jd-zN2" secondAttribute="top" id="gvc-8e-69t"/>
+                            <constraint firstItem="i1C-jd-zN2" firstAttribute="bottom" secondItem="gyl-Sg-aLh" secondAttribute="bottom" id="jFL-54-Lvc"/>
+                            <constraint firstItem="i1C-jd-zN2" firstAttribute="trailing" secondItem="gyl-Sg-aLh" secondAttribute="trailing" id="y7w-MN-ukR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i1C-jd-zN2"/>
+                    </view>
+                    <connections>
+                        <outlet property="watchlistView" destination="gyl-Sg-aLh" id="F1S-ET-LzZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ydo-Ms-oj2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="65"/>
+        </scene>
+        <!--Company Profile View Controller-->
+        <scene sceneID="r1I-CX-FgL">
+            <objects>
+                <viewController storyboardIdentifier="CompanyProfileViewController" id="Amq-6s-PSU" customClass="CompanyProfileViewController" customModule="SwiftyID" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ntx-z4-YZ1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4De-Ht-870" customClass="CompanyProfileView" customModule="SwiftyID" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4De-Ht-870" firstAttribute="top" secondItem="qlR-eU-EGA" secondAttribute="top" id="bDl-V1-c5O"/>
+                            <constraint firstItem="4De-Ht-870" firstAttribute="leading" secondItem="qlR-eU-EGA" secondAttribute="leading" id="ezv-ZV-RZt"/>
+                            <constraint firstItem="qlR-eU-EGA" firstAttribute="bottom" secondItem="4De-Ht-870" secondAttribute="bottom" id="g98-5W-v7R"/>
+                            <constraint firstItem="qlR-eU-EGA" firstAttribute="trailing" secondItem="4De-Ht-870" secondAttribute="trailing" id="nJ8-Y5-Haz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qlR-eU-EGA"/>
+                    </view>
+                    <connections>
+                        <outlet property="companyProfileView" destination="4De-Ht-870" id="vbK-sX-cpz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBE-A3-oYT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741" y="65"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="zJ1-fm-VXC">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="EFs-2P-Xkz" customClass="LoginViewController" customModule="SwiftyID" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DmJ-9o-nxf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXa-9h-mFD" customClass="LoginView" customModule="SwiftyID" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="k1G-de-dbD" firstAttribute="bottom" secondItem="OXa-9h-mFD" secondAttribute="bottom" id="0IA-og-S2Z"/>
+                            <constraint firstItem="OXa-9h-mFD" firstAttribute="top" secondItem="k1G-de-dbD" secondAttribute="top" id="BHF-TP-kuB"/>
+                            <constraint firstItem="k1G-de-dbD" firstAttribute="trailing" secondItem="OXa-9h-mFD" secondAttribute="trailing" id="jHI-SX-TIb"/>
+                            <constraint firstItem="OXa-9h-mFD" firstAttribute="leading" secondItem="k1G-de-dbD" secondAttribute="leading" id="vy2-HP-JD8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k1G-de-dbD"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginView" destination="OXa-9h-mFD" id="o0I-go-7yu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F7m-od-bEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-774" y="65"/>
+        </scene>
+    </scenes>
+</document>
