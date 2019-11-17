@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A40F431A207989D9EB90CD7 /* Pods_Modular_iOS_Architecture__SwiftyIDxStockbit_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7250B11F6E2B4D36B8FF66 /* Pods_Modular_iOS_Architecture__SwiftyIDxStockbit_.framework */; };
+		C1C82574C1BB7593A5CBABAC /* Pods_Modular_iOS_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF9C3667C3AFD6B4A251E86 /* Pods_Modular_iOS_Architecture.framework */; };
 		DD21683E2376458500133C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD21683D2376458500133C1E /* Main.storyboard */; };
 		DD2168412376887800133C1E /* CompanyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2168402376887800133C1E /* CompanyProfileViewController.swift */; };
 		DD2168452376891400133C1E /* CompanyProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2168442376891400133C1E /* CompanyProfileViewModel.swift */; };
@@ -44,8 +44,9 @@
 
 /* Begin PBXFileReference section */
 		07A53D63B8E6BA0AAF9D8B82 /* Pods-Modular iOS Architecture [SwiftyIDxStockbit].release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modular iOS Architecture [SwiftyIDxStockbit].release.xcconfig"; path = "Target Support Files/Pods-Modular iOS Architecture [SwiftyIDxStockbit]/Pods-Modular iOS Architecture [SwiftyIDxStockbit].release.xcconfig"; sourceTree = "<group>"; };
+		4FBDC0AC44F192B4F776E614 /* Pods-Modular iOS Architecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modular iOS Architecture.release.xcconfig"; path = "Target Support Files/Pods-Modular iOS Architecture/Pods-Modular iOS Architecture.release.xcconfig"; sourceTree = "<group>"; };
 		56AC1B072F04B94DFD902657 /* Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig"; path = "Target Support Files/Pods-Modular iOS Architecture [SwiftyIDxStockbit]/Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig"; sourceTree = "<group>"; };
-		DA7250B11F6E2B4D36B8FF66 /* Pods_Modular_iOS_Architecture__SwiftyIDxStockbit_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modular_iOS_Architecture__SwiftyIDxStockbit_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF9C3667C3AFD6B4A251E86 /* Pods_Modular_iOS_Architecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modular_iOS_Architecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD21683D2376458500133C1E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DD2168402376887800133C1E /* CompanyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyProfileViewController.swift; sourceTree = "<group>"; };
 		DD2168442376891400133C1E /* CompanyProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyProfileViewModel.swift; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 		DD9DBE97237FB28400FE4297 /* CompanyProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyProfileTableViewCell.xib; sourceTree = "<group>"; };
 		DD9DBE99237FB4E300FE4297 /* CompanyProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyProfileModel.swift; sourceTree = "<group>"; };
 		DDBDD407236EFCDC00BEA984 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		EC333E3D79738CFE20F8FF2B /* Pods-Modular iOS Architecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modular iOS Architecture.debug.xcconfig"; path = "Target Support Files/Pods-Modular iOS Architecture/Pods-Modular iOS Architecture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A40F431A207989D9EB90CD7 /* Pods_Modular_iOS_Architecture__SwiftyIDxStockbit_.framework in Frameworks */,
+				C1C82574C1BB7593A5CBABAC /* Pods_Modular_iOS_Architecture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +99,7 @@
 		4A04E07EE5B3A0C95CA75CD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DA7250B11F6E2B4D36B8FF66 /* Pods_Modular_iOS_Architecture__SwiftyIDxStockbit_.framework */,
+				7FF9C3667C3AFD6B4A251E86 /* Pods_Modular_iOS_Architecture.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +109,8 @@
 			children = (
 				56AC1B072F04B94DFD902657 /* Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig */,
 				07A53D63B8E6BA0AAF9D8B82 /* Pods-Modular iOS Architecture [SwiftyIDxStockbit].release.xcconfig */,
+				EC333E3D79738CFE20F8FF2B /* Pods-Modular iOS Architecture.debug.xcconfig */,
+				4FBDC0AC44F192B4F776E614 /* Pods-Modular iOS Architecture.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -433,15 +437,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Modular iOS Architecture [SwiftyIDxStockbit]/Pods-Modular iOS Architecture [SwiftyIDxStockbit]-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Modular iOS Architecture/Pods-Modular iOS Architecture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Modular iOS Architecture [SwiftyIDxStockbit]/Pods-Modular iOS Architecture [SwiftyIDxStockbit]-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Modular iOS Architecture/Pods-Modular iOS Architecture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Modular iOS Architecture [SwiftyIDxStockbit]/Pods-Modular iOS Architecture [SwiftyIDxStockbit]-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Modular iOS Architecture/Pods-Modular iOS Architecture-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		83DD3A97113B3BFAF4DD9B0F /* [CP] Check Pods Manifest.lock */ = {
@@ -459,7 +463,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Modular iOS Architecture [SwiftyIDxStockbit]-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Modular iOS Architecture-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -630,7 +634,7 @@
 		};
 		DD4EFCC0236E579300718D50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56AC1B072F04B94DFD902657 /* Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig */;
+			baseConfigurationReference = EC333E3D79738CFE20F8FF2B /* Pods-Modular iOS Architecture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -650,7 +654,7 @@
 		};
 		DD4EFCC1236E579300718D50 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07A53D63B8E6BA0AAF9D8B82 /* Pods-Modular iOS Architecture [SwiftyIDxStockbit].release.xcconfig */;
+			baseConfigurationReference = 4FBDC0AC44F192B4F776E614 /* Pods-Modular iOS Architecture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
