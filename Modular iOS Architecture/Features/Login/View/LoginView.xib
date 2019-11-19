@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="SwiftyID" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="6ft-Fp-FdJ" id="78L-8p-0gQ"/>
+                <outlet property="passwordTextField" destination="W4M-e8-o7B" id="9kv-uy-A5a"/>
+                <outlet property="usernameTextField" destination="Cj6-ew-kle" id="S0o-aO-6J3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YHx-wc-rcf">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="swiftyid" placeholder="Username or Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cj6-ew-kle">
+                    <rect key="frame" x="30" y="84" width="354" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="eC9-ms-LOq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="iloveswiftyid" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W4M-e8-o7B">
+                    <rect key="frame" x="30" y="151" width="354" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="zIX-z2-wga"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ft-Fp-FdJ">
+                    <rect key="frame" x="30" y="241" width="354" height="55"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="byu-r2-xBn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                    <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="didTapLoginButton:" destination="-1" eventType="touchUpInside" id="RTS-d3-JGe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="W4M-e8-o7B" firstAttribute="centerX" secondItem="YHx-wc-rcf" secondAttribute="centerX" id="2Dz-Ie-xqF"/>
+                <constraint firstItem="6ft-Fp-FdJ" firstAttribute="centerX" secondItem="YHx-wc-rcf" secondAttribute="centerX" id="A1N-lp-wEz"/>
+                <constraint firstItem="N2u-dA-QQN" firstAttribute="trailing" secondItem="Cj6-ew-kle" secondAttribute="trailing" constant="30" id="Jc9-GP-khv"/>
+                <constraint firstItem="Cj6-ew-kle" firstAttribute="centerX" secondItem="YHx-wc-rcf" secondAttribute="centerX" id="QTS-1t-rTA"/>
+                <constraint firstItem="6ft-Fp-FdJ" firstAttribute="trailing" secondItem="W4M-e8-o7B" secondAttribute="trailing" id="Tlh-aC-ikq"/>
+                <constraint firstItem="6ft-Fp-FdJ" firstAttribute="leading" secondItem="W4M-e8-o7B" secondAttribute="leading" id="U1s-A6-RG2"/>
+                <constraint firstItem="Cj6-ew-kle" firstAttribute="top" secondItem="N2u-dA-QQN" secondAttribute="top" constant="40" id="Yx4-5a-9ic"/>
+                <constraint firstItem="W4M-e8-o7B" firstAttribute="trailing" secondItem="Cj6-ew-kle" secondAttribute="trailing" id="f77-2b-otC"/>
+                <constraint firstItem="W4M-e8-o7B" firstAttribute="top" secondItem="Cj6-ew-kle" secondAttribute="bottom" constant="12" id="kha-2c-FOl"/>
+                <constraint firstItem="Cj6-ew-kle" firstAttribute="leading" secondItem="N2u-dA-QQN" secondAttribute="leading" constant="30" id="llC-KM-ewC"/>
+                <constraint firstItem="6ft-Fp-FdJ" firstAttribute="top" secondItem="W4M-e8-o7B" secondAttribute="bottom" constant="35" id="s6m-hu-G6C"/>
+                <constraint firstItem="W4M-e8-o7B" firstAttribute="leading" secondItem="Cj6-ew-kle" secondAttribute="leading" id="t4g-l9-yEm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="N2u-dA-QQN"/>
+            <point key="canvasLocation" x="220" y="164"/>
+        </view>
+    </objects>
+</document>
