@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C1C82574C1BB7593A5CBABAC /* Pods_Modular_iOS_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF9C3667C3AFD6B4A251E86 /* Pods_Modular_iOS_Architecture.framework */; };
 		DD21683E2376458500133C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD21683D2376458500133C1E /* Main.storyboard */; };
-		DD21684D23768DAF00133C1E /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD21684C23768DAF00133C1E /* UITextFieldExtensions.swift */; };
 		DD21684F2376932800133C1E /* WatchlistPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD21684E2376932800133C1E /* WatchlistPresenter.swift */; };
 		DD39816C236EF218002C601B /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD39816B236EF218002C601B /* Title.swift */; };
 		DD4EFCAF236E579100718D50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4EFCAE236E579100718D50 /* AppDelegate.swift */; };
@@ -52,7 +51,6 @@
 		56AC1B072F04B94DFD902657 /* Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig"; path = "Target Support Files/Pods-Modular iOS Architecture [SwiftyIDxStockbit]/Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig"; sourceTree = "<group>"; };
 		7FF9C3667C3AFD6B4A251E86 /* Pods_Modular_iOS_Architecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modular_iOS_Architecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD21683D2376458500133C1E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		DD21684C23768DAF00133C1E /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
 		DD21684E2376932800133C1E /* WatchlistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistPresenter.swift; sourceTree = "<group>"; };
 		DD39816B236EF218002C601B /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		DD4EFCAB236E579100718D50 /* SwiftyID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyID.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,14 +133,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		DD398173236EF51E002C601B /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				DD21684C23768DAF00133C1E /* UITextFieldExtensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		DD4EFCA2236E579100718D50 = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +158,6 @@
 				DD4EFCC4236E587F00718D50 /* Features */,
 				DD8C8CD2237065EC00301162 /* Networking */,
 				DD9DBE8E237B937B00FE4297 /* Models */,
-				DD398173236EF51E002C601B /* Extensions */,
 				DD39816D236EF21D002C601B /* Helpers */,
 				DD21683F2376458B00133C1E /* Storyboard */,
 				DD4EFCB7236E579300718D50 /* Assets.xcassets */,
@@ -378,7 +367,6 @@
 				DD8C8CCC23705F9200301162 /* WatchlistTableViewCell.swift in Sources */,
 				DD9DBE8A237B053B00FE4297 /* BaseURL.swift in Sources */,
 				DD39816C236EF218002C601B /* Title.swift in Sources */,
-				DD21684D23768DAF00133C1E /* UITextFieldExtensions.swift in Sources */,
 				DD8C8CD1237065E500301162 /* WatchlistAPIService.swift in Sources */,
 				DD8C8CC9236F0E4B00301162 /* WatchlistViewModel.swift in Sources */,
 				DD8C8CD423706BDD00301162 /* Typealias.swift in Sources */,
