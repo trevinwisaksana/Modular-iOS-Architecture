@@ -26,7 +26,7 @@ final class LoginViewController: UIViewController {
         
         loginView.delegate = self
         
-        title = Title.login.description
+        title = "Login"
     }
     
 }

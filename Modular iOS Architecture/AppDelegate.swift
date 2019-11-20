@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ModuleManager
+import LoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let loginViewController = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController")
+        ModuleManager.shared.register(withType: LoginModuleManageable.self, module: LoginModule())
+        
+        guard let loginViewController = ModuleManager.shared.module(withType: LoginModuleManageable.self)?.loginPage() else {
+            fatalError("Cannot instantiate the login page")
+        }
         
         let rootNavigationController = UINavigationController(rootViewController: loginViewController)
         

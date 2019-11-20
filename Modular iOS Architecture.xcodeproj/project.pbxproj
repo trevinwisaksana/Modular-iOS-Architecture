@@ -25,7 +25,26 @@
 		DD9DBE88237AF58700FE4297 /* WatchlistAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE87237AF58700FE4297 /* WatchlistAPIRouter.swift */; };
 		DD9DBE8A237B053B00FE4297 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE89237B053B00FE4297 /* BaseURL.swift */; };
 		DD9DBE90237B938900FE4297 /* WatchlistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE8F237B938900FE4297 /* WatchlistModel.swift */; };
+		DDD48B012384C7FA009DDAC3 /* ModuleManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD48B002384C7FA009DDAC3 /* ModuleManager.framework */; };
+		DDD48B022384C7FA009DDAC3 /* ModuleManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDD48B002384C7FA009DDAC3 /* ModuleManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DDD48B052384C7FE009DDAC3 /* LoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD48B042384C7FE009DDAC3 /* LoginKit.framework */; };
+		DDD48B062384C7FE009DDAC3 /* LoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDD48B042384C7FE009DDAC3 /* LoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DDD48B032384C7FB009DDAC3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DDD48B022384C7FA009DDAC3 /* ModuleManager.framework in Embed Frameworks */,
+				DDD48B062384C7FE009DDAC3 /* LoginKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		07A53D63B8E6BA0AAF9D8B82 /* Pods-Modular iOS Architecture [SwiftyIDxStockbit].release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modular iOS Architecture [SwiftyIDxStockbit].release.xcconfig"; path = "Target Support Files/Pods-Modular iOS Architecture [SwiftyIDxStockbit]/Pods-Modular iOS Architecture [SwiftyIDxStockbit].release.xcconfig"; sourceTree = "<group>"; };
@@ -51,6 +70,8 @@
 		DD9DBE87237AF58700FE4297 /* WatchlistAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistAPIRouter.swift; sourceTree = "<group>"; };
 		DD9DBE89237B053B00FE4297 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		DD9DBE8F237B938900FE4297 /* WatchlistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistModel.swift; sourceTree = "<group>"; };
+		DDD48B002384C7FA009DDAC3 /* ModuleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD48B042384C7FE009DDAC3 /* LoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC333E3D79738CFE20F8FF2B /* Pods-Modular iOS Architecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modular iOS Architecture.debug.xcconfig"; path = "Target Support Files/Pods-Modular iOS Architecture/Pods-Modular iOS Architecture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD48B012384C7FA009DDAC3 /* ModuleManager.framework in Frameworks */,
 				C1C82574C1BB7593A5CBABAC /* Pods_Modular_iOS_Architecture.framework in Frameworks */,
+				DDD48B052384C7FE009DDAC3 /* LoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +92,8 @@
 		4A04E07EE5B3A0C95CA75CD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDD48B042384C7FE009DDAC3 /* LoginKit.framework */,
+				DDD48B002384C7FA009DDAC3 /* ModuleManager.framework */,
 				7FF9C3667C3AFD6B4A251E86 /* Pods_Modular_iOS_Architecture.framework */,
 			);
 			name = Frameworks;
@@ -244,6 +269,7 @@
 				DD4EFCA8236E579100718D50 /* Frameworks */,
 				DD4EFCA9236E579100718D50 /* Resources */,
 				08B8C90A0CB43E969DBCE5DE /* [CP] Embed Pods Frameworks */,
+				DDD48B032384C7FB009DDAC3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -500,7 +526,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ASHUNREKRL;
 				INFOPLIST_FILE = "$(SRCROOT)/Modular iOS Architecture/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,7 +546,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ASHUNREKRL;
 				INFOPLIST_FILE = "$(SRCROOT)/Modular iOS Architecture/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

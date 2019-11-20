@@ -53,8 +53,24 @@ final class LoginView: UIView {
     }
     
     private func setTextFieldPadding() {
-        passwordTextField.setLeftPadding()
-        usernameTextField.setLeftPadding()
+        setLeftPadding(forTextField: passwordTextField)
+        setLeftPadding(forTextField: usernameTextField)
+    }
+    
+    private func setLeftPadding(forTextField textField: UITextField, amount: CGFloat = 20.0) {
+        let paddingFrame = CGRect(x: 0, y: 0, width: amount, height: frame.size.height)
+        let paddingView = UIView(frame: paddingFrame)
+        
+        textField.leftView = paddingView
+        textField.leftViewMode = .always
+    }
+    
+    private func setRightPadding(forTextField textField: UITextField, amount: CGFloat = 20.0) {
+        let paddingFrame = CGRect(x: 0, y: 0, width: amount, height: frame.size.height)
+        let paddingView = UIView(frame: paddingFrame)
+        
+        textField.rightView = paddingView
+        textField.rightViewMode = .always
     }
     
     // MARK: - IBAction
