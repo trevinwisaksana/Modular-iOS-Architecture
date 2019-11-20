@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import ModuleManager
 
 final class LoginPresenter {
     
     func presentMainPage() {
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let watchlistViewController = mainStoryboard.instantiateViewController(withIdentifier: "WatchlistViewController")
+        guard let watchlistViewController = ModuleManager.shared.module(withType: WatchlistModuleManageable.self)?.watchlistPage() else {
+            fatalError("Cannot instantiate the watchlist page")
+        }
         
         let rootNavigationController = UINavigationController(rootViewController: watchlistViewController)
         

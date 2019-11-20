@@ -36,7 +36,8 @@ final class WatchlistView: UIView {
         super.awakeFromNib()
         
         // Registering the WatchlistTableViewCell
-        let watchlistCellNib = UINib(nibName: "WatchlistTableViewCell", bundle: nil)
+        let bundle = Bundle(for: WatchlistView.self)
+        let watchlistCellNib = UINib(nibName: "WatchlistTableViewCell", bundle: bundle)
         tableView.register(watchlistCellNib, forCellReuseIdentifier: "WatchlistTableViewCell")
         
         // This is to remove seperator lines of empty cells

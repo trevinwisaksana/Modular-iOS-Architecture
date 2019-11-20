@@ -9,6 +9,7 @@
 import UIKit
 import ModuleManager
 import LoginKit
+import WatchlistKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         ModuleManager.shared.register(withType: LoginModuleManageable.self, module: LoginModule())
+        ModuleManager.shared.register(withType: WatchlistModuleManageable.self, module: WatchlistModule())
         
         guard let loginViewController = ModuleManager.shared.module(withType: LoginModuleManageable.self)?.loginPage() else {
             fatalError("Cannot instantiate the login page")

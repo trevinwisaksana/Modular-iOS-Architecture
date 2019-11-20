@@ -8,26 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		C1C82574C1BB7593A5CBABAC /* Pods_Modular_iOS_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF9C3667C3AFD6B4A251E86 /* Pods_Modular_iOS_Architecture.framework */; };
-		DD21683E2376458500133C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD21683D2376458500133C1E /* Main.storyboard */; };
-		DD21684F2376932800133C1E /* WatchlistPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD21684E2376932800133C1E /* WatchlistPresenter.swift */; };
-		DD39816C236EF218002C601B /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD39816B236EF218002C601B /* Title.swift */; };
 		DD4EFCAF236E579100718D50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4EFCAE236E579100718D50 /* AppDelegate.swift */; };
 		DD4EFCB8236E579300718D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4EFCB7236E579300718D50 /* Assets.xcassets */; };
 		DD4EFCBB236E579300718D50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4EFCB9236E579300718D50 /* LaunchScreen.storyboard */; };
-		DD8C8CBA236F078000301162 /* WatchlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C8CB9236F078000301162 /* WatchlistViewController.swift */; };
-		DD8C8CC4236F0CBB00301162 /* WatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C8CC3236F0CBB00301162 /* WatchlistView.swift */; };
-		DD8C8CC9236F0E4B00301162 /* WatchlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C8CC8236F0E4B00301162 /* WatchlistViewModel.swift */; };
-		DD8C8CCC23705F9200301162 /* WatchlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C8CCB23705F9200301162 /* WatchlistTableViewCell.swift */; };
-		DD8C8CCF23705FA600301162 /* WatchlistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8C8CCE23705FA600301162 /* WatchlistTableViewCell.xib */; };
-		DD8C8CD1237065E500301162 /* WatchlistAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C8CD0237065E500301162 /* WatchlistAPIService.swift */; };
-		DD8C8CD423706BDD00301162 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C8CD323706BDD00301162 /* Typealias.swift */; };
-		DD9DBE88237AF58700FE4297 /* WatchlistAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE87237AF58700FE4297 /* WatchlistAPIRouter.swift */; };
-		DD9DBE8A237B053B00FE4297 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE89237B053B00FE4297 /* BaseURL.swift */; };
-		DD9DBE90237B938900FE4297 /* WatchlistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE8F237B938900FE4297 /* WatchlistModel.swift */; };
 		DDD48B012384C7FA009DDAC3 /* ModuleManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD48B002384C7FA009DDAC3 /* ModuleManager.framework */; };
 		DDD48B022384C7FA009DDAC3 /* ModuleManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDD48B002384C7FA009DDAC3 /* ModuleManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DDD48B052384C7FE009DDAC3 /* LoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD48B042384C7FE009DDAC3 /* LoginKit.framework */; };
 		DDD48B062384C7FE009DDAC3 /* LoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDD48B042384C7FE009DDAC3 /* LoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DDD48BB323859EC6009DDAC3 /* WatchlistKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD48BB223859EC6009DDAC3 /* WatchlistKit.framework */; };
+		DDD48BB423859EC6009DDAC3 /* WatchlistKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDD48BB223859EC6009DDAC3 /* WatchlistKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DDD48BB423859EC6009DDAC3 /* WatchlistKit.framework in Embed Frameworks */,
 				DDD48B022384C7FA009DDAC3 /* ModuleManager.framework in Embed Frameworks */,
 				DDD48B062384C7FE009DDAC3 /* LoginKit.framework in Embed Frameworks */,
 			);
@@ -50,26 +40,14 @@
 		4FBDC0AC44F192B4F776E614 /* Pods-Modular iOS Architecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modular iOS Architecture.release.xcconfig"; path = "Target Support Files/Pods-Modular iOS Architecture/Pods-Modular iOS Architecture.release.xcconfig"; sourceTree = "<group>"; };
 		56AC1B072F04B94DFD902657 /* Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig"; path = "Target Support Files/Pods-Modular iOS Architecture [SwiftyIDxStockbit]/Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig"; sourceTree = "<group>"; };
 		7FF9C3667C3AFD6B4A251E86 /* Pods_Modular_iOS_Architecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modular_iOS_Architecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD21683D2376458500133C1E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		DD21684E2376932800133C1E /* WatchlistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistPresenter.swift; sourceTree = "<group>"; };
-		DD39816B236EF218002C601B /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		DD4EFCAB236E579100718D50 /* SwiftyID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4EFCAE236E579100718D50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD4EFCB7236E579300718D50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD4EFCBA236E579300718D50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD4EFCBC236E579300718D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD8C8CB9236F078000301162 /* WatchlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistViewController.swift; sourceTree = "<group>"; };
-		DD8C8CC3236F0CBB00301162 /* WatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
-		DD8C8CC8236F0E4B00301162 /* WatchlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistViewModel.swift; sourceTree = "<group>"; };
-		DD8C8CCB23705F9200301162 /* WatchlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistTableViewCell.swift; sourceTree = "<group>"; };
-		DD8C8CCE23705FA600301162 /* WatchlistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchlistTableViewCell.xib; sourceTree = "<group>"; };
-		DD8C8CD0237065E500301162 /* WatchlistAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistAPIService.swift; sourceTree = "<group>"; };
-		DD8C8CD323706BDD00301162 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
-		DD9DBE87237AF58700FE4297 /* WatchlistAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistAPIRouter.swift; sourceTree = "<group>"; };
-		DD9DBE89237B053B00FE4297 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
-		DD9DBE8F237B938900FE4297 /* WatchlistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistModel.swift; sourceTree = "<group>"; };
 		DDD48B002384C7FA009DDAC3 /* ModuleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD48B042384C7FE009DDAC3 /* LoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD48BB223859EC6009DDAC3 /* WatchlistKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WatchlistKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC333E3D79738CFE20F8FF2B /* Pods-Modular iOS Architecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modular iOS Architecture.debug.xcconfig"; path = "Target Support Files/Pods-Modular iOS Architecture/Pods-Modular iOS Architecture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDD48B012384C7FA009DDAC3 /* ModuleManager.framework in Frameworks */,
+				DDD48BB323859EC6009DDAC3 /* WatchlistKit.framework in Frameworks */,
 				C1C82574C1BB7593A5CBABAC /* Pods_Modular_iOS_Architecture.framework in Frameworks */,
 				DDD48B052384C7FE009DDAC3 /* LoginKit.framework in Frameworks */,
 			);
@@ -90,6 +69,7 @@
 		4A04E07EE5B3A0C95CA75CD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDD48BB223859EC6009DDAC3 /* WatchlistKit.framework */,
 				DDD48B042384C7FE009DDAC3 /* LoginKit.framework */,
 				DDD48B002384C7FA009DDAC3 /* ModuleManager.framework */,
 				7FF9C3667C3AFD6B4A251E86 /* Pods_Modular_iOS_Architecture.framework */,
@@ -106,31 +86,6 @@
 				4FBDC0AC44F192B4F776E614 /* Pods-Modular iOS Architecture.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		DD21683F2376458B00133C1E /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				DD21683D2376458500133C1E /* Main.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		DD2168502376932D00133C1E /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				DD21684E2376932800133C1E /* WatchlistPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		DD39816D236EF21D002C601B /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				DD39816B236EF218002C601B /* Title.swift */,
-				DD8C8CD323706BDD00301162 /* Typealias.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		DD4EFCA2236E579100718D50 = {
@@ -155,95 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				DD4EFCAE236E579100718D50 /* AppDelegate.swift */,
-				DD4EFCC4236E587F00718D50 /* Features */,
-				DD8C8CD2237065EC00301162 /* Networking */,
-				DD9DBE8E237B937B00FE4297 /* Models */,
-				DD39816D236EF21D002C601B /* Helpers */,
-				DD21683F2376458B00133C1E /* Storyboard */,
 				DD4EFCB7236E579300718D50 /* Assets.xcassets */,
 				DD4EFCB9236E579300718D50 /* LaunchScreen.storyboard */,
 				DD4EFCBC236E579300718D50 /* Info.plist */,
 			);
 			path = "Modular iOS Architecture";
-			sourceTree = "<group>";
-		};
-		DD4EFCC4236E587F00718D50 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				DD8C8CBB236F078600301162 /* Watchlist */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		DD8C8CBB236F078600301162 /* Watchlist */ = {
-			isa = PBXGroup;
-			children = (
-				DD8C8CBC236F078B00301162 /* Controller */,
-				DD8C8CCA236F0E5000301162 /* ViewModel */,
-				DD2168502376932D00133C1E /* Presenter */,
-				DD8C8CC5236F0CBE00301162 /* View */,
-			);
-			path = Watchlist;
-			sourceTree = "<group>";
-		};
-		DD8C8CBC236F078B00301162 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DD8C8CB9236F078000301162 /* WatchlistViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		DD8C8CC5236F0CBE00301162 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DD8C8CC3236F0CBB00301162 /* WatchlistView.swift */,
-				DD8C8CCD23705F9600301162 /* Cell */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DD8C8CCA236F0E5000301162 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				DD8C8CC8236F0E4B00301162 /* WatchlistViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		DD8C8CCD23705F9600301162 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				DD8C8CCB23705F9200301162 /* WatchlistTableViewCell.swift */,
-				DD8C8CCE23705FA600301162 /* WatchlistTableViewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		DD8C8CD2237065EC00301162 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				DD8C8CD0237065E500301162 /* WatchlistAPIService.swift */,
-				DD9DBE87237AF58700FE4297 /* WatchlistAPIRouter.swift */,
-				DD9DBE8B237B053F00FE4297 /* Endpoint */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		DD9DBE8B237B053F00FE4297 /* Endpoint */ = {
-			isa = PBXGroup;
-			children = (
-				DD9DBE89237B053B00FE4297 /* BaseURL.swift */,
-			);
-			path = Endpoint;
-			sourceTree = "<group>";
-		};
-		DD9DBE8E237B937B00FE4297 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				DD9DBE8F237B938900FE4297 /* WatchlistModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,8 +178,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD8C8CCF23705FA600301162 /* WatchlistTableViewCell.xib in Resources */,
-				DD21683E2376458500133C1E /* Main.storyboard in Resources */,
 				DD4EFCBB236E579300718D50 /* LaunchScreen.storyboard in Resources */,
 				DD4EFCB8236E579300718D50 /* Assets.xcassets in Resources */,
 			);
@@ -363,17 +232,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD8C8CC4236F0CBB00301162 /* WatchlistView.swift in Sources */,
-				DD8C8CCC23705F9200301162 /* WatchlistTableViewCell.swift in Sources */,
-				DD9DBE8A237B053B00FE4297 /* BaseURL.swift in Sources */,
-				DD39816C236EF218002C601B /* Title.swift in Sources */,
-				DD8C8CD1237065E500301162 /* WatchlistAPIService.swift in Sources */,
-				DD8C8CC9236F0E4B00301162 /* WatchlistViewModel.swift in Sources */,
-				DD8C8CD423706BDD00301162 /* Typealias.swift in Sources */,
-				DD9DBE90237B938900FE4297 /* WatchlistModel.swift in Sources */,
-				DD9DBE88237AF58700FE4297 /* WatchlistAPIRouter.swift in Sources */,
-				DD8C8CBA236F078000301162 /* WatchlistViewController.swift in Sources */,
-				DD21684F2376932800133C1E /* WatchlistPresenter.swift in Sources */,
 				DD4EFCAF236E579100718D50 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
