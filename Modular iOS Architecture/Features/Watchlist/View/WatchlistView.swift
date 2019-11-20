@@ -19,7 +19,7 @@ protocol WatchlistViewDataSource: class {
 
 protocol WatchlistViewInterface: WatchlistCellInterface {}
 
-final class WatchlistView: XibView {
+final class WatchlistView: UIView {
     
     // MARK: - IBOutlet
     

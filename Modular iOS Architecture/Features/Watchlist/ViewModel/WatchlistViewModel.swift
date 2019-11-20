@@ -24,11 +24,6 @@ final class WatchlistViewModel {
         return listOfMostActiveStocks[indexPath.row]
     }
     
-    func companyProfileViewModel(forIndexPath indexPath: IndexPath) -> CompanyProfileViewModel {
-        let data = listOfMostActiveStocks[indexPath.row]
-        return CompanyProfileViewModel(companySymbol: data.companySymbol, companyName: data.companyName)
-    }
-    
     func getWatchlistData(success: @escaping voidCompletionHandler, failure: @escaping errorMessageCompletionHandler) {
         watchlistAPIService.getMostActiveSymbols(success: { (data) in
             

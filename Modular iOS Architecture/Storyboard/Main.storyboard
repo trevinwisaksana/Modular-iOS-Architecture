@@ -18,7 +18,26 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyl-Sg-aLh" customClass="WatchlistView" customModule="SwiftyID" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lcc-je-5Pj">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="gyl-Sg-aLh" id="S0G-rX-bXH"/>
+                                            <outlet property="delegate" destination="gyl-Sg-aLh" id="B9P-Ah-Xx3"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Lcc-je-5Pj" firstAttribute="leading" secondItem="gyl-Sg-aLh" secondAttribute="leading" id="SJB-A7-aFE"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lcc-je-5Pj" secondAttribute="bottom" id="aa2-wY-Qtf"/>
+                                    <constraint firstItem="Lcc-je-5Pj" firstAttribute="top" secondItem="gyl-Sg-aLh" secondAttribute="top" id="czw-4D-mHL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lcc-je-5Pj" secondAttribute="trailing" id="xdw-Qh-RQT"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="tableView" destination="Lcc-je-5Pj" id="dh7-jG-19R"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -48,7 +67,53 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXa-9h-mFD" customClass="LoginView" customModule="SwiftyID" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="iloveswiftyid" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWh-wF-Q0B">
+                                        <rect key="frame" x="30" y="107" width="354" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="r7g-8s-4Bj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MX-EV-hXQ">
+                                        <rect key="frame" x="30" y="197" width="354" height="55"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="2s4-4d-wQZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="didTapLoginButton:" destination="OXa-9h-mFD" eventType="touchUpInside" id="tNG-G7-2fB"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="swiftyid" placeholder="Username or Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sBJ-OJ-nQe">
+                                        <rect key="frame" x="30" y="40" width="354" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="lcz-PT-KLC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="sBJ-OJ-nQe" firstAttribute="leading" secondItem="OXa-9h-mFD" secondAttribute="leading" constant="30" id="0JB-LI-Rky"/>
+                                    <constraint firstItem="0MX-EV-hXQ" firstAttribute="leading" secondItem="uWh-wF-Q0B" secondAttribute="leading" id="2HK-cO-gMV"/>
+                                    <constraint firstItem="0MX-EV-hXQ" firstAttribute="top" secondItem="uWh-wF-Q0B" secondAttribute="bottom" constant="35" id="DkW-lH-TIv"/>
+                                    <constraint firstItem="uWh-wF-Q0B" firstAttribute="trailing" secondItem="sBJ-OJ-nQe" secondAttribute="trailing" id="E2K-xW-DMI"/>
+                                    <constraint firstItem="uWh-wF-Q0B" firstAttribute="leading" secondItem="sBJ-OJ-nQe" secondAttribute="leading" id="Rvp-Qo-x5W"/>
+                                    <constraint firstItem="sBJ-OJ-nQe" firstAttribute="top" secondItem="OXa-9h-mFD" secondAttribute="top" constant="40" id="dRx-aa-hwV"/>
+                                    <constraint firstItem="uWh-wF-Q0B" firstAttribute="top" secondItem="sBJ-OJ-nQe" secondAttribute="bottom" constant="12" id="sUy-rd-EHP"/>
+                                    <constraint firstAttribute="trailing" secondItem="sBJ-OJ-nQe" secondAttribute="trailing" constant="30" id="vvv-y7-8pc"/>
+                                    <constraint firstItem="0MX-EV-hXQ" firstAttribute="trailing" secondItem="uWh-wF-Q0B" secondAttribute="trailing" id="xjT-FY-56U"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="loginButton" destination="0MX-EV-hXQ" id="3UE-b4-QEB"/>
+                                    <outlet property="passwordTextField" destination="uWh-wF-Q0B" id="kEa-3t-QNc"/>
+                                    <outlet property="usernameTextField" destination="sBJ-OJ-nQe" id="PUZ-3L-jib"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

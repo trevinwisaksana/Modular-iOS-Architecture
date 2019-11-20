@@ -16,9 +16,4 @@ final class WatchlistPresenter {
         self.parentController = parent
     }
     
-    func presentCompanyProfile(withViewModel viewModel: CompanyProfileViewModel) {
-        let companyProfileViewController = CompanyProfileViewController.instantiate(viewModel: viewModel)
-        parentController?.present(companyProfileViewController, animated: true, completion: nil)
-    }
-    
 }

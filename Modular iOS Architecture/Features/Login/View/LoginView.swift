@@ -12,7 +12,7 @@ protocol LoginViewDelegate: class {
     func loginView(_ loginView: LoginView, didTapLoginButton button: UIButton)
 }
 
-final class LoginView: XibView {
+final class LoginView: UIView {
     
     // MARK: - IBOutlet
     

@@ -61,8 +61,5 @@ extension WatchlistViewController: WatchlistViewDataSource {
 // MARK: - WatchlistViewDelegate
 
 extension WatchlistViewController: WatchlistViewDelegate {
-    func watchlistView(_ view: WatchlistView, didSelectRowAt indexPath: IndexPath) {
-        let companyProfileViewModel = viewModel.companyProfileViewModel(forIndexPath: indexPath)
-        presenter.presentCompanyProfile(withViewModel: companyProfileViewModel)
-    }
+    func watchlistView(_ view: WatchlistView, didSelectRowAt indexPath: IndexPath) {}
 }
