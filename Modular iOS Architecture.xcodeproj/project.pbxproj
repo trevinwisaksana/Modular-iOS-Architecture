@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		C1C82574C1BB7593A5CBABAC /* Pods_Modular_iOS_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF9C3667C3AFD6B4A251E86 /* Pods_Modular_iOS_Architecture.framework */; };
 		DD21683E2376458500133C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD21683D2376458500133C1E /* Main.storyboard */; };
-		DD2168412376887800133C1E /* CompanyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2168402376887800133C1E /* CompanyProfileViewController.swift */; };
-		DD2168452376891400133C1E /* CompanyProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2168442376891400133C1E /* CompanyProfileViewModel.swift */; };
-		DD2168482376892300133C1E /* CompanyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2168472376892300133C1E /* CompanyProfileView.swift */; };
-		DD21684B2376894C00133C1E /* CompanyProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD21684A2376894C00133C1E /* CompanyProfileView.xib */; };
 		DD21684D23768DAF00133C1E /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD21684C23768DAF00133C1E /* UITextFieldExtensions.swift */; };
 		DD21684F2376932800133C1E /* WatchlistPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD21684E2376932800133C1E /* WatchlistPresenter.swift */; };
 		DD30ABF9236EFBCC000AAAA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30ABF8236EFBCC000AAAA2 /* LoginView.swift */; };
@@ -36,9 +32,6 @@
 		DD9DBE88237AF58700FE4297 /* WatchlistAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE87237AF58700FE4297 /* WatchlistAPIRouter.swift */; };
 		DD9DBE8A237B053B00FE4297 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE89237B053B00FE4297 /* BaseURL.swift */; };
 		DD9DBE90237B938900FE4297 /* WatchlistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE8F237B938900FE4297 /* WatchlistModel.swift */; };
-		DD9DBE95237FB27300FE4297 /* CompanyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE94237FB27300FE4297 /* CompanyProfileTableViewCell.swift */; };
-		DD9DBE98237FB28400FE4297 /* CompanyProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD9DBE97237FB28400FE4297 /* CompanyProfileTableViewCell.xib */; };
-		DD9DBE9A237FB4E300FE4297 /* CompanyProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE99237FB4E300FE4297 /* CompanyProfileModel.swift */; };
 		DDBDD408236EFCDC00BEA984 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBDD407236EFCDC00BEA984 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,10 +41,6 @@
 		56AC1B072F04B94DFD902657 /* Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig"; path = "Target Support Files/Pods-Modular iOS Architecture [SwiftyIDxStockbit]/Pods-Modular iOS Architecture [SwiftyIDxStockbit].debug.xcconfig"; sourceTree = "<group>"; };
 		7FF9C3667C3AFD6B4A251E86 /* Pods_Modular_iOS_Architecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modular_iOS_Architecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD21683D2376458500133C1E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		DD2168402376887800133C1E /* CompanyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyProfileViewController.swift; sourceTree = "<group>"; };
-		DD2168442376891400133C1E /* CompanyProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyProfileViewModel.swift; sourceTree = "<group>"; };
-		DD2168472376892300133C1E /* CompanyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyProfileView.swift; sourceTree = "<group>"; };
-		DD21684A2376894C00133C1E /* CompanyProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyProfileView.xib; sourceTree = "<group>"; };
 		DD21684C23768DAF00133C1E /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
 		DD21684E2376932800133C1E /* WatchlistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistPresenter.swift; sourceTree = "<group>"; };
 		DD30ABF8236EFBCC000AAAA2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -77,9 +66,6 @@
 		DD9DBE87237AF58700FE4297 /* WatchlistAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistAPIRouter.swift; sourceTree = "<group>"; };
 		DD9DBE89237B053B00FE4297 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		DD9DBE8F237B938900FE4297 /* WatchlistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistModel.swift; sourceTree = "<group>"; };
-		DD9DBE94237FB27300FE4297 /* CompanyProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyProfileTableViewCell.swift; sourceTree = "<group>"; };
-		DD9DBE97237FB28400FE4297 /* CompanyProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyProfileTableViewCell.xib; sourceTree = "<group>"; };
-		DD9DBE99237FB4E300FE4297 /* CompanyProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyProfileModel.swift; sourceTree = "<group>"; };
 		DDBDD407236EFCDC00BEA984 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		EC333E3D79738CFE20F8FF2B /* Pods-Modular iOS Architecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modular iOS Architecture.debug.xcconfig"; path = "Target Support Files/Pods-Modular iOS Architecture/Pods-Modular iOS Architecture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,42 +107,6 @@
 				DD21683D2376458500133C1E /* Main.storyboard */,
 			);
 			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		DD2168422376887D00133C1E /* CompanyProfile */ = {
-			isa = PBXGroup;
-			children = (
-				DD2168432376888400133C1E /* Controller */,
-				DD2168462376891700133C1E /* ViewModel */,
-				DD2168492376892800133C1E /* View */,
-			);
-			path = CompanyProfile;
-			sourceTree = "<group>";
-		};
-		DD2168432376888400133C1E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DD2168402376887800133C1E /* CompanyProfileViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		DD2168462376891700133C1E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				DD2168442376891400133C1E /* CompanyProfileViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		DD2168492376892800133C1E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DD2168472376892300133C1E /* CompanyProfileView.swift */,
-				DD21684A2376894C00133C1E /* CompanyProfileView.xib */,
-				DD9DBE96237FB27900FE4297 /* Cell */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		DD2168502376932D00133C1E /* Presenter */ = {
@@ -260,7 +210,6 @@
 		DD4EFCC4236E587F00718D50 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				DD2168422376887D00133C1E /* CompanyProfile */,
 				DD8C8CBB236F078600301162 /* Watchlist */,
 				DD4EFCC2236E57DC00718D50 /* Login */,
 			);
@@ -343,18 +292,8 @@
 			isa = PBXGroup;
 			children = (
 				DD9DBE8F237B938900FE4297 /* WatchlistModel.swift */,
-				DD9DBE99237FB4E300FE4297 /* CompanyProfileModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		DD9DBE96237FB27900FE4297 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				DD9DBE94237FB27300FE4297 /* CompanyProfileTableViewCell.swift */,
-				DD9DBE97237FB28400FE4297 /* CompanyProfileTableViewCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,10 +360,8 @@
 				DD21683E2376458500133C1E /* Main.storyboard in Resources */,
 				DD4EFCBB236E579300718D50 /* LaunchScreen.storyboard in Resources */,
 				DD30ABFC236EFBD7000AAAA2 /* LoginView.xib in Resources */,
-				DD9DBE98237FB28400FE4297 /* CompanyProfileTableViewCell.xib in Resources */,
 				DD8C8CC7236F0CCB00301162 /* WatchlistView.xib in Resources */,
 				DD4EFCB8236E579300718D50 /* Assets.xcassets in Resources */,
-				DD21684B2376894C00133C1E /* CompanyProfileView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,20 +421,15 @@
 				DD21684D23768DAF00133C1E /* UITextFieldExtensions.swift in Sources */,
 				DD8C8CD1237065E500301162 /* WatchlistAPIService.swift in Sources */,
 				DD8C8CC9236F0E4B00301162 /* WatchlistViewModel.swift in Sources */,
-				DD2168452376891400133C1E /* CompanyProfileViewModel.swift in Sources */,
 				DD30ABF9236EFBCC000AAAA2 /* LoginView.swift in Sources */,
 				DD8C8CD423706BDD00301162 /* Typealias.swift in Sources */,
 				DDBDD408236EFCDC00BEA984 /* UIViewExtensions.swift in Sources */,
 				DD9DBE90237B938900FE4297 /* WatchlistModel.swift in Sources */,
-				DD2168482376892300133C1E /* CompanyProfileView.swift in Sources */,
-				DD2168412376887800133C1E /* CompanyProfileViewController.swift in Sources */,
-				DD9DBE9A237FB4E300FE4297 /* CompanyProfileModel.swift in Sources */,
 				DD8C8CB7236EFE9900301162 /* LoginPresenter.swift in Sources */,
 				DD9DBE88237AF58700FE4297 /* WatchlistAPIRouter.swift in Sources */,
 				DD398167236EEE8E002C601B /* LoginViewController.swift in Sources */,
 				DD39816F236EF333002C601B /* LoginViewModel.swift in Sources */,
 				DD8C8CBA236F078000301162 /* WatchlistViewController.swift in Sources */,
-				DD9DBE95237FB27300FE4297 /* CompanyProfileTableViewCell.swift in Sources */,
 				DD21684F2376932800133C1E /* WatchlistPresenter.swift in Sources */,
 				DD398172236EF51B002C601B /* UIViewControllerExtensions.swift in Sources */,
 				DD4EFCAF236E579100718D50 /* AppDelegate.swift in Sources */,
