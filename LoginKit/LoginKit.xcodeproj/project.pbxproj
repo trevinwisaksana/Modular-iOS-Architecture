@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		DDD48ABA2384C0B9009DDAC3 /* LoginKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DDD48AB82384C0B9009DDAC3 /* LoginKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDD48AD62384C1D3009DDAC3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD48ACF2384C1D3009DDAC3 /* LoginViewModel.swift */; };
+		DDD48AD72384C1D3009DDAC3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD48AD12384C1D3009DDAC3 /* LoginPresenter.swift */; };
+		DDD48AD82384C1D3009DDAC3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD48AD32384C1D3009DDAC3 /* LoginViewController.swift */; };
+		DDD48AD92384C1D3009DDAC3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD48AD52384C1D3009DDAC3 /* LoginView.swift */; };
+		DDD48ADB2384C2DC009DDAC3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD48ADA2384C2DC009DDAC3 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DDD48AB52384C0B9009DDAC3 /* LoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD48AB82384C0B9009DDAC3 /* LoginKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginKit.h; sourceTree = "<group>"; };
 		DDD48AB92384C0B9009DDAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD48ACF2384C1D3009DDAC3 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DDD48AD12384C1D3009DDAC3 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		DDD48AD32384C1D3009DDAC3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DDD48AD52384C1D3009DDAC3 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DDD48ADA2384C2DC009DDAC3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +58,62 @@
 			children = (
 				DDD48AB82384C0B9009DDAC3 /* LoginKit.h */,
 				DDD48AB92384C0B9009DDAC3 /* Info.plist */,
+				DDD48ADC2384C31D009DDAC3 /* Storyboard */,
+				DDD48ACD2384C1D3009DDAC3 /* Login */,
 			);
 			path = LoginKit;
+			sourceTree = "<group>";
+		};
+		DDD48ACD2384C1D3009DDAC3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DDD48ACE2384C1D3009DDAC3 /* ViewModel */,
+				DDD48AD02384C1D3009DDAC3 /* Presenter */,
+				DDD48AD22384C1D3009DDAC3 /* Controller */,
+				DDD48AD42384C1D3009DDAC3 /* View */,
+			);
+			name = Login;
+			path = "../../Modular iOS Architecture/Features/Login";
+			sourceTree = "<group>";
+		};
+		DDD48ACE2384C1D3009DDAC3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDD48ACF2384C1D3009DDAC3 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDD48AD02384C1D3009DDAC3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DDD48AD12384C1D3009DDAC3 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DDD48AD22384C1D3009DDAC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDD48AD32384C1D3009DDAC3 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DDD48AD42384C1D3009DDAC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDD48AD52384C1D3009DDAC3 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDD48ADC2384C31D009DDAC3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DDD48ADA2384C2DC009DDAC3 /* Login.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD48ADB2384C2DC009DDAC3 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +196,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD48AD82384C1D3009DDAC3 /* LoginViewController.swift in Sources */,
+				DDD48AD72384C1D3009DDAC3 /* LoginPresenter.swift in Sources */,
+				DDD48AD92384C1D3009DDAC3 /* LoginView.swift in Sources */,
+				DDD48AD62384C1D3009DDAC3 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
