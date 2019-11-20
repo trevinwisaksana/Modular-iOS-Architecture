@@ -9,25 +9,11 @@
 import Alamofire
 import SwiftyJSON
 
-final class WatchlistAPIService {
+public final class WatchlistAPIService {
+    public init() {}
     
-    func getMostActiveSymbols(success: @escaping jsonCompletionHandler, failure: @escaping errorMessageCompletionHandler) {
+    func getMostActiveSymbols(success: @escaping (JSON) -> Void, failure: @escaping (String) -> Void) {
         let url = WatchlistAPIRouter.getActiveSymbols
-        
-        Alamofire.request(url).validate().responseJSON { (response) in
-            switch response.result {
-            case .success(let data):
-                let jsonData = JSON(data)
-                success(jsonData)
-                
-            case .failure(let error):
-                failure(error.localizedDescription)
-            }
-        }
-    }
-    
-    func getCompanyProfile(withCompanySymbol symbol: String, success: @escaping jsonCompletionHandler, failure: @escaping errorMessageCompletionHandler) {
-        let url = WatchlistAPIRouter.getCompanyProfile(companySymbol: symbol)
         
         Alamofire.request(url).validate().responseJSON { (response) in
             switch response.result {

@@ -11,11 +11,10 @@ import Alamofire
 enum WatchlistAPIRouter: URLRequestConvertible {
        
     case getActiveSymbols
-    case getCompanyProfile(companySymbol: String)
     
     var method: HTTPMethod {
         switch self {
-        case .getActiveSymbols, .getCompanyProfile:
+        case .getActiveSymbols:
             return .get
         }
     }
@@ -24,8 +23,6 @@ enum WatchlistAPIRouter: URLRequestConvertible {
         switch self {
         case .getActiveSymbols:
             return "stock/actives"
-        case .getCompanyProfile(let companySymbol):
-            return "company/profile/" + companySymbol
         }
     }
     

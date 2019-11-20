@@ -17,7 +17,6 @@ final class WatchlistViewController: UIViewController {
     // MARK: - Properties
     
     private let viewModel = WatchlistViewModel()
-    private lazy var presenter = WatchlistPresenter(parent: self)
     
     // MARK: - VC Lifecycle
     

@@ -24,7 +24,7 @@ final class WatchlistViewModel {
         return listOfMostActiveStocks[indexPath.row]
     }
     
-    func getWatchlistData(success: @escaping voidCompletionHandler, failure: @escaping errorMessageCompletionHandler) {
+    func getWatchlistData(success: @escaping () -> Void, failure: @escaping (String) -> Void) {
         watchlistAPIService.getMostActiveSymbols(success: { (data) in
             
             let mostActiveStock = data["mostActiveStock"].arrayValue

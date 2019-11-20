@@ -10,10 +10,8 @@
 		C1C82574C1BB7593A5CBABAC /* Pods_Modular_iOS_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF9C3667C3AFD6B4A251E86 /* Pods_Modular_iOS_Architecture.framework */; };
 		DD21683E2376458500133C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD21683D2376458500133C1E /* Main.storyboard */; };
 		DD21684D23768DAF00133C1E /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD21684C23768DAF00133C1E /* UITextFieldExtensions.swift */; };
-		DD21684F2376932800133C1E /* WatchlistPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD21684E2376932800133C1E /* WatchlistPresenter.swift */; };
 		DD30ABF9236EFBCC000AAAA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30ABF8236EFBCC000AAAA2 /* LoginView.swift */; };
 		DD398167236EEE8E002C601B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD398166236EEE8E002C601B /* LoginViewController.swift */; };
-		DD39816C236EF218002C601B /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD39816B236EF218002C601B /* Title.swift */; };
 		DD39816F236EF333002C601B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD39816E236EF333002C601B /* LoginViewModel.swift */; };
 		DD4EFCAF236E579100718D50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4EFCAE236E579100718D50 /* AppDelegate.swift */; };
 		DD4EFCB8236E579300718D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4EFCB7236E579300718D50 /* Assets.xcassets */; };
@@ -25,7 +23,6 @@
 		DD8C8CCC23705F9200301162 /* WatchlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C8CCB23705F9200301162 /* WatchlistTableViewCell.swift */; };
 		DD8C8CCF23705FA600301162 /* WatchlistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8C8CCE23705FA600301162 /* WatchlistTableViewCell.xib */; };
 		DD8C8CD1237065E500301162 /* WatchlistAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C8CD0237065E500301162 /* WatchlistAPIService.swift */; };
-		DD8C8CD423706BDD00301162 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C8CD323706BDD00301162 /* Typealias.swift */; };
 		DD9DBE88237AF58700FE4297 /* WatchlistAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE87237AF58700FE4297 /* WatchlistAPIRouter.swift */; };
 		DD9DBE8A237B053B00FE4297 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE89237B053B00FE4297 /* BaseURL.swift */; };
 		DD9DBE90237B938900FE4297 /* WatchlistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DBE8F237B938900FE4297 /* WatchlistModel.swift */; };
@@ -38,10 +35,8 @@
 		7FF9C3667C3AFD6B4A251E86 /* Pods_Modular_iOS_Architecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modular_iOS_Architecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD21683D2376458500133C1E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DD21684C23768DAF00133C1E /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
-		DD21684E2376932800133C1E /* WatchlistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistPresenter.swift; sourceTree = "<group>"; };
 		DD30ABF8236EFBCC000AAAA2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DD398166236EEE8E002C601B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		DD39816B236EF218002C601B /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		DD39816E236EF333002C601B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DD4EFCAB236E579100718D50 /* SwiftyID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4EFCAE236E579100718D50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +50,6 @@
 		DD8C8CCB23705F9200301162 /* WatchlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistTableViewCell.swift; sourceTree = "<group>"; };
 		DD8C8CCE23705FA600301162 /* WatchlistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchlistTableViewCell.xib; sourceTree = "<group>"; };
 		DD8C8CD0237065E500301162 /* WatchlistAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistAPIService.swift; sourceTree = "<group>"; };
-		DD8C8CD323706BDD00301162 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		DD9DBE87237AF58700FE4297 /* WatchlistAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistAPIRouter.swift; sourceTree = "<group>"; };
 		DD9DBE89237B053B00FE4297 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		DD9DBE8F237B938900FE4297 /* WatchlistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistModel.swift; sourceTree = "<group>"; };
@@ -101,12 +95,12 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		DD2168502376932D00133C1E /* Presenter */ = {
+		DD29B3BD23859FDC00214EB6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DD21684E2376932800133C1E /* WatchlistPresenter.swift */,
+				DD9DBE8F237B938900FE4297 /* WatchlistModel.swift */,
 			);
-			path = Presenter;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DD30ABFA236EFBCF000AAAA2 /* View */ = {
@@ -123,15 +117,6 @@
 				DD398166236EEE8E002C601B /* LoginViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		DD39816D236EF21D002C601B /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				DD39816B236EF218002C601B /* Title.swift */,
-				DD8C8CD323706BDD00301162 /* Typealias.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		DD398170236EF336002C601B /* ViewModel */ = {
@@ -174,9 +159,7 @@
 				DD4EFCAE236E579100718D50 /* AppDelegate.swift */,
 				DD4EFCC4236E587F00718D50 /* Features */,
 				DD8C8CD2237065EC00301162 /* Networking */,
-				DD9DBE8E237B937B00FE4297 /* Models */,
 				DD398173236EF51E002C601B /* Extensions */,
-				DD39816D236EF21D002C601B /* Helpers */,
 				DD21683F2376458B00133C1E /* Storyboard */,
 				DD4EFCB7236E579300718D50 /* Assets.xcassets */,
 				DD4EFCB9236E579300718D50 /* LaunchScreen.storyboard */,
@@ -218,7 +201,7 @@
 			children = (
 				DD8C8CBC236F078B00301162 /* Controller */,
 				DD8C8CCA236F0E5000301162 /* ViewModel */,
-				DD2168502376932D00133C1E /* Presenter */,
+				DD29B3BD23859FDC00214EB6 /* Model */,
 				DD8C8CC5236F0CBE00301162 /* View */,
 			);
 			path = Watchlist;
@@ -274,14 +257,6 @@
 				DD9DBE89237B053B00FE4297 /* BaseURL.swift */,
 			);
 			path = Endpoint;
-			sourceTree = "<group>";
-		};
-		DD9DBE8E237B937B00FE4297 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				DD9DBE8F237B938900FE4297 /* WatchlistModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,19 +378,16 @@
 				DD8C8CC4236F0CBB00301162 /* WatchlistView.swift in Sources */,
 				DD8C8CCC23705F9200301162 /* WatchlistTableViewCell.swift in Sources */,
 				DD9DBE8A237B053B00FE4297 /* BaseURL.swift in Sources */,
-				DD39816C236EF218002C601B /* Title.swift in Sources */,
 				DD21684D23768DAF00133C1E /* UITextFieldExtensions.swift in Sources */,
 				DD8C8CD1237065E500301162 /* WatchlistAPIService.swift in Sources */,
 				DD8C8CC9236F0E4B00301162 /* WatchlistViewModel.swift in Sources */,
 				DD30ABF9236EFBCC000AAAA2 /* LoginView.swift in Sources */,
-				DD8C8CD423706BDD00301162 /* Typealias.swift in Sources */,
 				DD9DBE90237B938900FE4297 /* WatchlistModel.swift in Sources */,
 				DD8C8CB7236EFE9900301162 /* LoginPresenter.swift in Sources */,
 				DD9DBE88237AF58700FE4297 /* WatchlistAPIRouter.swift in Sources */,
 				DD398167236EEE8E002C601B /* LoginViewController.swift in Sources */,
 				DD39816F236EF333002C601B /* LoginViewModel.swift in Sources */,
 				DD8C8CBA236F078000301162 /* WatchlistViewController.swift in Sources */,
-				DD21684F2376932800133C1E /* WatchlistPresenter.swift in Sources */,
 				DD4EFCAF236E579100718D50 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
