@@ -6,25 +6,20 @@
 //  Copyright © 2019 Stockbit. All rights reserved.
 //
 
-import SwiftyJSON
+struct WatchlistModel: Codable {
+    var mostActiveStock: [StockModel]
+}
 
-struct WatchlistModel {
-    
-    var companySymbol: String = ""
-    var companyName: String = ""
-    
-    var price: String = ""
-    var percentageChange: String = ""
-    
-    init(data: JSON) {
-        companySymbol = data["ticker"].stringValue
-        companyName = data["companyName"].stringValue
-        
-        price = data["price"].stringValue
-        
-        percentageChange = data["changesPercentage"].stringValue
-        percentageChange = percentageChange.replacingOccurrences(of: "(", with: "")
-        percentageChange = percentageChange.replacingOccurrences(of: ")", with: "")
+struct StockModel: Codable {
+    var companySymbol: String
+    var companyName: String
+    var price: String
+    var percentageChange: String
+
+    enum CodingKeys: String, CodingKey {
+       case companySymbol = "ticker"
+       case companyName
+       case price
+       case percentageChange = "changesPercentage"
     }
-    
 }

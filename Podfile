@@ -7,6 +7,5 @@ target 'Modular iOS Architecture' do
 
   # Pods for Modular iOS Architecture
   pod 'Alamofire'
-  pod 'SwiftyJSON'
 
 end

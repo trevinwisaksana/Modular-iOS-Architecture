@@ -12,14 +12,13 @@ import SwiftyJSON
 public final class WatchlistAPIService {
     public init() {}
     
-    func getMostActiveSymbols(success: @escaping (JSON) -> Void, failure: @escaping (String) -> Void) {
+    func getMostActiveSymbols(success: @escaping (Data) -> Void, failure: @escaping (String) -> Void) {
         let url = WatchlistAPIRouter.getActiveSymbols
         
-        Alamofire.request(url).validate().responseJSON { (response) in
+        Alamofire.request(url).validate().responseData { (response) in
             switch response.result {
             case .success(let data):
-                let jsonData = JSON(data)
-                success(jsonData)
+                success(data)
                 
             case .failure(let error):
                 failure(error.localizedDescription)

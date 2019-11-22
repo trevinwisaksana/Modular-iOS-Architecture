@@ -39,7 +39,7 @@ final class WatchlistViewController: UIViewController {
             self.watchlistView.hideLoadingIndicator()
         }, failure: { (errorMessage) in
             self.watchlistView.hideLoadingIndicator()
-            // Handle the error message here
+            print(errorMessage)
         })
     }
     

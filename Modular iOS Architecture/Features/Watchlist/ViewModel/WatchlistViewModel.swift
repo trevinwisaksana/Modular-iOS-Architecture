@@ -8,29 +8,36 @@
 
 import Foundation
 
-extension WatchlistModel: WatchlistViewInterface {}
+extension StockModel: WatchlistViewInterface {}
 
 final class WatchlistViewModel {
     
     private let watchlistAPIService = WatchlistAPIService()
     
-    private var listOfMostActiveStocks: [WatchlistModel] = []
+    private var listOfMostActiveStocks: [StockModel] = []
     
     var numberOfMostActiveStocks: Int {
         return listOfMostActiveStocks.count
     }
     
-    func mostActiveStock(atIndexPath indexPath: IndexPath) -> WatchlistModel {
+    func mostActiveStock(atIndexPath indexPath: IndexPath) -> StockModel {
         return listOfMostActiveStocks[indexPath.row]
     }
     
     func getWatchlistData(success: @escaping () -> Void, failure: @escaping (String) -> Void) {
         watchlistAPIService.getMostActiveSymbols(success: { (data) in
             
-            let mostActiveStock = data["mostActiveStock"].arrayValue
-            self.listOfMostActiveStocks = mostActiveStock.compactMap { WatchlistModel(data: $0) }
-            
-            success()
+            do {
+                let decoder = JSONDecoder()
+                let model = try decoder.decode(WatchlistModel.self, from: data)
+                
+                self.listOfMostActiveStocks = model.mostActiveStock
+                
+                success()
+                
+            } catch let parsingError {
+                failure((parsingError as NSError).debugDescription)
+            }
             
         }, failure: { (errorMessage) in
             failure(errorMessage)
