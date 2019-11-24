@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Watchlist View Controller-->
+        <scene sceneID="AxA-Bf-CeR">
+            <objects>
+                <viewController storyboardIdentifier="WatchlistViewController" id="UH9-yF-ngu" customClass="WatchlistViewController" customModule="WatchlistKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eJQ-6S-MzF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q28-sv-u7N" customClass="WatchlistView" customModule="WatchlistKit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j6U-DX-WDK">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Q28-sv-u7N" id="sUK-6u-ZZ3"/>
+                                            <outlet property="delegate" destination="Q28-sv-u7N" id="gYS-ax-7eR"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="j6U-DX-WDK" secondAttribute="bottom" id="61c-4c-EXg"/>
+                                    <constraint firstAttribute="trailing" secondItem="j6U-DX-WDK" secondAttribute="trailing" id="ZBh-Mf-8Wp"/>
+                                    <constraint firstItem="j6U-DX-WDK" firstAttribute="top" secondItem="Q28-sv-u7N" secondAttribute="top" id="hK3-lk-xbu"/>
+                                    <constraint firstItem="j6U-DX-WDK" firstAttribute="leading" secondItem="Q28-sv-u7N" secondAttribute="leading" id="vnf-Rq-IQW"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="tableView" destination="j6U-DX-WDK" id="Ipv-AT-NCP"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TVj-Rv-gyG" firstAttribute="bottom" secondItem="Q28-sv-u7N" secondAttribute="bottom" id="5HG-FM-7v0"/>
+                            <constraint firstItem="TVj-Rv-gyG" firstAttribute="trailing" secondItem="Q28-sv-u7N" secondAttribute="trailing" id="J6D-NX-pMr"/>
+                            <constraint firstItem="Q28-sv-u7N" firstAttribute="top" secondItem="TVj-Rv-gyG" secondAttribute="top" id="lUS-RI-nC8"/>
+                            <constraint firstItem="Q28-sv-u7N" firstAttribute="leading" secondItem="TVj-Rv-gyG" secondAttribute="leading" id="yA0-Od-2JN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TVj-Rv-gyG"/>
+                    </view>
+                    <connections>
+                        <outlet property="watchlistView" destination="Q28-sv-u7N" id="zUu-2W-K4a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xy-AI-eRw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="65"/>
+        </scene>
+    </scenes>
+</document>
