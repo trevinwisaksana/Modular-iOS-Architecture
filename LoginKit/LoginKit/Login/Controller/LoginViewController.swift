@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class LoginViewController: UIViewController {
+public final class LoginViewController: UIViewController {
     
     // MARK: - IBOutlet
     
@@ -21,7 +21,7 @@ final class LoginViewController: UIViewController {
     
     // MARK: - VC Lifecycle
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         loginView.delegate = self

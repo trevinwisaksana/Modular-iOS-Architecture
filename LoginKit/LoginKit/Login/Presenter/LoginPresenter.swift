@@ -13,7 +13,7 @@ final class LoginPresenter {
     
     func presentMainPage() {
         guard let watchlistViewController = ModuleManager.shared.module(withType: WatchlistModuleManageable.self)?.watchlistPage() else {
-            fatalError("Cannot instantiate the watchlist page")
+            return
         }
         
         let rootNavigationController = UINavigationController(rootViewController: watchlistViewController)

@@ -1,30 +1,25 @@
 //
 //  AppDelegate.swift
-//  Modular iOS Architecture [SwiftyIDxStockbit]
+//  LoginDemo
 //
-//  Created by Trevin Wisaksana on 03/11/19.
+//  Created by Trevin Wisaksana on 24/11/19.
 //  Copyright © 2019 Stockbit. All rights reserved.
 //
 
 import UIKit
-import ModuleManager
 import LoginKit
-import WatchlistKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        ModuleManager.shared.register(withType: LoginModuleManageable.self, module: LoginModule())
-        ModuleManager.shared.register(withType: WatchlistModuleManageable.self, module: WatchlistModule())
+        let bundle = Bundle(for: LoginViewController.self)
+        let storyboard = UIStoryboard(name: "Login", bundle: bundle)
         
-        guard let loginViewController = ModuleManager.shared.module(withType: LoginModuleManageable.self)?.loginPage() else {
-            fatalError("Cannot instantiate the login page")
-        }
-        
+        let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
         let rootNavigationController = UINavigationController(rootViewController: loginViewController)
         
         // Assign the rootViewController
@@ -58,4 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+
 }
+

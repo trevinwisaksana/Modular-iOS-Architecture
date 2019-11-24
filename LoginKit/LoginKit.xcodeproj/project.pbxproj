@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD197F16238A4E5100041B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD197F15238A4E5100041B18 /* AppDelegate.swift */; };
+		DD197F1F238A4E5600041B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD197F1E238A4E5600041B18 /* Assets.xcassets */; };
+		DD197F22238A4E5600041B18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD197F20238A4E5600041B18 /* LaunchScreen.storyboard */; };
+		DD197F27238A4E9000041B18 /* LoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD48AB52384C0B9009DDAC3 /* LoginKit.framework */; };
+		DD197F28238A4E9000041B18 /* LoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDD48AB52384C0B9009DDAC3 /* LoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DDD48ABA2384C0B9009DDAC3 /* LoginKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DDD48AB82384C0B9009DDAC3 /* LoginKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDD48ADB2384C2DC009DDAC3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD48ADA2384C2DC009DDAC3 /* Login.storyboard */; };
 		DDD48AF92384C6A4009DDAC3 /* LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD48AF82384C6A4009DDAC3 /* LoginModule.swift */; };
@@ -17,7 +22,36 @@
 		DDD48B132385900B009DDAC3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD48B0F2385900B009DDAC3 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DD197F29238A4E9000041B18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDD48AAC2384C0B9009DDAC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDD48AB42384C0B9009DDAC3;
+			remoteInfo = LoginKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD197F2B238A4E9000041B18 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DD197F28238A4E9000041B18 /* LoginKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DD197F13238A4E5100041B18 /* LoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD197F15238A4E5100041B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD197F1E238A4E5600041B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD197F21238A4E5600041B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD197F23238A4E5600041B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDD48AB52384C0B9009DDAC3 /* LoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD48AB82384C0B9009DDAC3 /* LoginKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginKit.h; sourceTree = "<group>"; };
 		DDD48AB92384C0B9009DDAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +65,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DD197F10238A4E5100041B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD197F27238A4E9000041B18 /* LoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDD48AB22384C0B9009DDAC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +84,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD197F14238A4E5100041B18 /* LoginDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DD197F15238A4E5100041B18 /* AppDelegate.swift */,
+				DD197F1E238A4E5600041B18 /* Assets.xcassets */,
+				DD197F20238A4E5600041B18 /* LaunchScreen.storyboard */,
+				DD197F23238A4E5600041B18 /* Info.plist */,
+			);
+			path = LoginDemo;
+			sourceTree = "<group>";
+		};
 		DDD48AAB2384C0B9009DDAC3 = {
 			isa = PBXGroup;
 			children = (
 				DDD48AB72384C0B9009DDAC3 /* LoginKit */,
+				DD197F14238A4E5100041B18 /* LoginDemo */,
 				DDD48AB62384C0B9009DDAC3 /* Products */,
 				DDD48AFB2384C6F4009DDAC3 /* Frameworks */,
 			);
@@ -55,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				DDD48AB52384C0B9009DDAC3 /* LoginKit.framework */,
+				DD197F13238A4E5100041B18 /* LoginDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +207,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		DD197F12238A4E5100041B18 /* LoginDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD197F26238A4E5600041B18 /* Build configuration list for PBXNativeTarget "LoginDemo" */;
+			buildPhases = (
+				DD197F0F238A4E5100041B18 /* Sources */,
+				DD197F10238A4E5100041B18 /* Frameworks */,
+				DD197F11238A4E5100041B18 /* Resources */,
+				DD197F2B238A4E9000041B18 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD197F2A238A4E9000041B18 /* PBXTargetDependency */,
+			);
+			name = LoginDemo;
+			productName = LoginDemo;
+			productReference = DD197F13238A4E5100041B18 /* LoginDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		DDD48AB42384C0B9009DDAC3 /* LoginKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDD48ABD2384C0B9009DDAC3 /* Build configuration list for PBXNativeTarget "LoginKit" */;
@@ -176,9 +250,13 @@
 		DDD48AAC2384C0B9009DDAC3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = Stockbit;
 				TargetAttributes = {
+					DD197F12238A4E5100041B18 = {
+						CreatedOnToolsVersion = 11.2;
+					};
 					DDD48AB42384C0B9009DDAC3 = {
 						CreatedOnToolsVersion = 11.1;
 					};
@@ -198,11 +276,21 @@
 			projectRoot = "";
 			targets = (
 				DDD48AB42384C0B9009DDAC3 /* LoginKit */,
+				DD197F12238A4E5100041B18 /* LoginDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DD197F11238A4E5100041B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD197F22238A4E5600041B18 /* LaunchScreen.storyboard in Resources */,
+				DD197F1F238A4E5600041B18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDD48AB32384C0B9009DDAC3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +302,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DD197F0F238A4E5100041B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD197F16238A4E5100041B18 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDD48AB12384C0B9009DDAC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,7 +324,64 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DD197F2A238A4E9000041B18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDD48AB42384C0B9009DDAC3 /* LoginKit */;
+			targetProxy = DD197F29238A4E9000041B18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD197F20238A4E5600041B18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD197F21238A4E5600041B18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		DD197F24238A4E5600041B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ASHUNREKRL;
+				INFOPLIST_FILE = LoginDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stockbit.LoginDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD197F25238A4E5600041B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ASHUNREKRL;
+				INFOPLIST_FILE = LoginDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stockbit.LoginDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DDD48ABB2384C0B9009DDAC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -280,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -337,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -402,6 +555,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DD197F26238A4E5600041B18 /* Build configuration list for PBXNativeTarget "LoginDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD197F24238A4E5600041B18 /* Debug */,
+				DD197F25238A4E5600041B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DDD48AAF2384C0B9009DDAC3 /* Build configuration list for PBXProject "LoginKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
