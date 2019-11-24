@@ -7,7 +7,6 @@
 //
 
 import Alamofire
-import SwiftyJSON
 
 public final class WatchlistAPIService {
     public init() {}
