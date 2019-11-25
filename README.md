@@ -3,4 +3,4 @@
 </p>
 
 # Usage
-Upon cloning this repository, please execute `pod install` using your Terminal.
+Upon cloning this repository, please execute `pod install` in your Terminal.
