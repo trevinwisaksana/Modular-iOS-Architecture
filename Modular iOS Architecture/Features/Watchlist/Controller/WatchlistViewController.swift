@@ -16,7 +16,7 @@ final class WatchlistViewController: UIViewController {
     
     // MARK: - Properties
     
-    private let viewModel = WatchlistViewModel()
+    private let viewModel = WatchlistViewModel(apiService: WatchlistAPIService())
     
     // MARK: - VC Lifecycle
     

@@ -8,10 +8,14 @@
 
 import Alamofire
 
-public final class WatchlistAPIService {
+public protocol WatchlistAPIServiceProtocol {
+    func getMostActiveSymbols(success: @escaping (Data) -> Void, failure: @escaping (String) -> Void)
+}
+
+public final class WatchlistAPIService: WatchlistAPIServiceProtocol {
     public init() {}
     
-    func getMostActiveSymbols(success: @escaping (Data) -> Void, failure: @escaping (String) -> Void) {
+    public func getMostActiveSymbols(success: @escaping (Data) -> Void, failure: @escaping (String) -> Void) {
         let url = WatchlistAPIRouter.getActiveSymbols
         
         Alamofire.request(url).validate().responseData { (response) in

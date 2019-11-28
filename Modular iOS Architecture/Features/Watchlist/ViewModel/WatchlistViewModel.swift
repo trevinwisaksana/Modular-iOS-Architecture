@@ -12,7 +12,11 @@ extension StockModel: WatchlistViewInterface {}
 
 final class WatchlistViewModel {
     
-    private let watchlistAPIService = WatchlistAPIService()
+    init(apiService: WatchlistAPIServiceProtocol) {
+        self.watchlistAPIService = apiService
+    }
+    
+    private let watchlistAPIService: WatchlistAPIServiceProtocol?
     
     private var listOfMostActiveStocks: [StockModel] = []
     
@@ -25,7 +29,7 @@ final class WatchlistViewModel {
     }
     
     func getWatchlistData(success: @escaping () -> Void, failure: @escaping (String) -> Void) {
-        watchlistAPIService.getMostActiveSymbols(success: { (data) in
+        watchlistAPIService?.getMostActiveSymbols(success: { (data) in
             
             do {
                 let decoder = JSONDecoder()
